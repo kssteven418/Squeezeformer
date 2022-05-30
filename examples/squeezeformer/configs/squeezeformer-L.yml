@@ -1,0 +1,104 @@
+# Copyright 2020 Huy Le Nguyen (@usimarit)
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+speech_config:
+  sample_rate: 16000
+  frame_ms: 25
+  stride_ms: 10
+  num_feature_bins: 80
+  feature_type: log_mel_spectrogram
+  preemphasis: 0.97
+  normalize_signal: True
+  normalize_feature: True
+  normalize_per_frame: False
+
+decoder_config:
+  vocabulary: ../../sp.model
+
+model_config:
+  encoder_subsampling:
+    type: conv2d
+    filters: 640
+    kernel_size: 3
+    strides: 2
+  encoder_dmodel: 640
+  encoder_num_blocks: 22
+  encoder_head_size: 80
+  encoder_num_heads: 8
+  encoder_mha_type: relmha
+  encoder_kernel_size: 31
+  encoder_fc_factor: 1.
+  encoder_dropout: 0.1
+
+  encoder_time_reduce_idx: 
+    - 10
+  encoder_time_recover_idx: 
+    - 21
+
+  encoder_conv_use_glu: false
+  encoder_ds_subsample: true
+  encoder_no_post_ln: true
+  encoder_adaptive_scale: true
+  encoder_fixed_arch:
+    - M
+    - s
+    - C
+    - s
+
+learning_config:
+  train_dataset_config:
+    augmentation_config:
+      time_masking:
+        num_masks: 10
+        p_upperbound: 0.05
+      freq_masking:
+        num_masks: 2
+        mask_factor: 27
+    data_paths: null
+    shuffle: True
+    cache: True
+    buffer_size: 100
+    drop_remainder: True
+    stage: train
+
+  eval_dataset_config:
+    data_paths: null
+    shuffle: False
+    cache: True
+    buffer_size: 100
+    drop_remainder: True
+    stage: eval
+
+  test_dataset_config:
+    data_paths: null
+    shuffle: False
+    cache: True
+    buffer_size: 100
+    drop_remainder: False
+    stage: test
+
+  optimizer_config:
+    beta_1: 0.9
+    beta_2: 0.98
+    epsilon: 1e-9
+
+  running_config:
+    num_epochs: 1000
+    filepath: null
+    checkpoint:
+      filepath: null
+      save_best_only: False
+      save_weights_only: True
+      save_freq: epoch
+    states_dir: null
