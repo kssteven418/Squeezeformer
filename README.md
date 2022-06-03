@@ -3,6 +3,8 @@
 
 We provide testing codes for Squeezeformer, along with the pre-trained checkpoints.
 
+Check out [paper](https://arxiv.org/pdf/2206.00888.pdf) for more details.
+
 ## Install Squeezeformer
 
 We recommend using Python version 3.8.  
