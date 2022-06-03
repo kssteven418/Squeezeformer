@@ -87,7 +87,7 @@ AdaHessian has been developed as part of the following paper. We appreciate it i
 ```text
 @article{kim2022squeezeformer,
   title={Squeezeformer: An Efficient Transformer for Automatic Speech Recognition},
-  author={Kim, Sehoon and Gholami, Amir and Shaw, Albert and Lee, Nicholas and Mangalam, Karttikeya and Malik, Jitendra Mahoney, Michael W and Keutzer, Kurt},
+  author={Kim, Sehoon and Gholami, Amir and Shaw, Albert and Lee, Nicholas and Mangalam, Karttikeya and Malik, Jitendra and Mahoney, Michael W and Keutzer, Kurt},
   journal={arxiv:2206.00888},
   year={2022}
 }
