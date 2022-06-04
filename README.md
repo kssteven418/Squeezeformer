@@ -82,7 +82,7 @@ python test.py --bs {batch_size} --config configs/squeezeformer-S.yml --saved sq
 * You can test on other Squeezeformer models by changing `--config` and `--saved`, e.g., Squeezeformer-L or Squeezeformer-M.
 
 ## Citation
-AdaHessian has been developed as part of the following paper. We appreciate it if you would please cite the following paper if you found the library useful for your work:
+Squeezeformer has been developed as part of the following paper. We appreciate it if you would please cite the following paper if you found the library useful for your work:
 
 ```text
 @article{kim2022squeezeformer,
