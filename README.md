@@ -1,5 +1,6 @@
 # Squeezeformer:  An Efficient Transformer for Automatic Speech Recognition
-![Screenshot from 2022-05-22 15-23-07](https://user-images.githubusercontent.com/50283958/169718508-fa7fd22f-9038-44f8-9e8e-bc9c6afff124.png)
+![teaser](https://user-images.githubusercontent.com/50283958/172300924-157b8458-0e95-4b2e-b992-fc7927738146.png)
+
 
 We provide testing codes for Squeezeformer, along with the pre-trained checkpoints.
 
