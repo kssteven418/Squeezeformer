@@ -82,6 +82,14 @@ python test.py --bs {batch_size} --config configs/squeezeformer-S.yml --saved sq
 * `tsv_dir` is the directory path to the tsv manifest files that you created in the previous step.
 * You can test on other Squeezeformer models by changing `--config` and `--saved`, e.g., Squeezeformer-L or Squeezeformer-M.
 
+## External implementations 
+We are thankful to all the researchers who have extended Squeezeformer for different purposes.
+
+|      **Description**      | **Checkpoint**                                    | 
+| :-----------------------: | :----------------------------------------------:  |
+|  PyTorch implementation   | [link](https://github.com/upskyy/Squeezeformer)   | 
+
+
 ## Citation
 Squeezeformer has been developed as part of the following paper. We appreciate it if you would please cite the following paper if you found the library useful for your work:
 
