@@ -4,7 +4,11 @@
 
 We provide testing codes for Squeezeformer, along with the pre-trained checkpoints.
 
-Check out [paper](https://arxiv.org/pdf/2206.00888.pdf) for more details.
+Check out our [paper](https://arxiv.org/pdf/2206.00888.pdf) for more details.
+
+
+Squeezeformer is now supported at NVIDIA's  [NeMo](https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/stable/starthere/intro.html#:~:text=NVIDIA%20NeMo%2C%20part%20of%20the,%2DSpeech%20(TTS)%20models.) library as well, along with the training recipes and scripts. Please check out [link](https://github.com/NVIDIA/NeMo/tree/main/examples/asr/conf/squeezeformer).
+
 
 ## Install Squeezeformer
 
@@ -88,6 +92,7 @@ We are thankful to all the researchers who have extended Squeezeformer for diffe
 |      **Description**      | **Checkpoint**                                    | 
 | :-----------------------: | :----------------------------------------------:  |
 |  PyTorch implementation   | [link](https://github.com/upskyy/Squeezeformer)   | 
+|  NeMo                     | [link](https://github.com/NVIDIA/NeMo/tree/main/examples/asr/conf/squeezeformer)   | 
 
 
 ## Citation
