@@ -106,3 +106,7 @@ Squeezeformer has been developed as part of the following paper. We appreciate i
   year={2022}
 }
 ```
+
+## Copyright
+
+THIS SOFTWARE AND/OR DATA WAS DEPOSITED IN THE BAIR OPEN RESEARCH COMMONS REPOSITORY ON 02/07/23.
