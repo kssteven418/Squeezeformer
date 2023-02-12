@@ -93,6 +93,7 @@ We are thankful to all the researchers who have extended Squeezeformer for diffe
 | :-----------------------: | :----------------------------------------------:  |
 |  PyTorch implementation   | [link](https://github.com/upskyy/Squeezeformer)   | 
 |  NeMo                     | [link](https://github.com/NVIDIA/NeMo/tree/main/examples/asr/conf/squeezeformer)   | 
+|  WeNet                    | [link](https://github.com/wenet-e2e/wenet) |
 
 
 ## Citation
